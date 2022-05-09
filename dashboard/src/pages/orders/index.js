@@ -179,8 +179,12 @@ export default function InvoiceList () {
   /* Test GET orders */
 
   useEffect(async () => {
-    const orders = await window.fetch('http://localhost:3001/orders').then(r => r.json())
-    setTableData(orders)
+    try {
+      const orders = await window.fetch('http://localhost:3001/orders').then(r => r.json())
+      setTableData(orders)
+    } catch (error) {
+      window.console.error(error)
+    }
   }, [])
 
   return (
