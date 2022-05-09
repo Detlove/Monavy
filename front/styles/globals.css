@@ -1,0 +1,23 @@
+:root{
+  --foreground: #3e3e3e;
+  --foreground_light: #888;
+  --foreground_light2: #e9e9e9;
+
+  --btn_foreground: var(--foreground);
+  --btn_border: #cccccc;
+
+  --btn: #009714;
+  --danger: #ff4242;
+}
+
+body {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--foreground);
+}
+
+/* Carousel Extra */
+
+.paging-item{
+  margin: 0 3px;
+}

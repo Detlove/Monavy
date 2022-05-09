@@ -1,0 +1,142 @@
+.section{
+  width: 92%;
+  margin: 0 auto 25px auto;
+
+  border-bottom: 1px solid var(--foreground_light);
+}
+
+.title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reviews{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.reviews span{
+  margin-left: 10px;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.price s{
+  margin-right: 10px;
+  font-size: 16px;
+  color: var(--foreground_light);
+}
+
+.size{
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.size_title{
+  font-weight: 600;
+}
+.size_desc{
+  margin-left: 5px;
+}
+.size_options{
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 17px;
+}
+.size_option{
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid var(--btn_border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .5s ease;
+}
+.is_selected{
+  background-color: var(--foreground);
+  color: #fff;
+}
+.size_qt{
+  font-size: 12px;
+  text-decoration: underline;
+  margin-left: 5px;
+  align-self: center;
+  font-weight: 400;
+}
+
+.quantify{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.quantify_buttons{
+  background-color: var(--foreground_light2);
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.quantify_buttons span{
+  width: 50px;
+}
+.quantify_buttons span:nth-child(2){
+  text-align: right;
+}
+
+.buy_button{
+  background-color: var(--btn);
+  width: 100%;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 25px;
+  animation: wobble 2.5s 1s ease infinite;
+}
+.buy_button:active{
+  opacity: 0.75;
+}
+
+.ship_item{
+  display: flex;
+  /* column-gap: 10px; */
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ship svg{
+  display: inline;
+  min-width: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.ship_item:nth-child(2){
+  margin-bottom: 20px;
+}
+
+.ship strong{
+  font-weight: 600;
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  10% { transform: translateX(-3px); }
+  20% { transform: translateX(2.5px); }
+  30% { transform: translateX(-2px); }
+  40% { transform: translateX(1.5px); }
+  50% { transform: translateX(-1px); }
+  100% { transform: translateX(0.5px); }
+}

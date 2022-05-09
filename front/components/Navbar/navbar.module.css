@@ -1,0 +1,33 @@
+.nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  transition: top .8s ease;
+}
+
+.smenu{
+  width: 20px;
+  height: 20px;
+}
+.logo{
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+
+.sbag{
+  width: 20px;
+  height: 20px;
+}
+
+.hide{
+  top: -60px;
+}
+

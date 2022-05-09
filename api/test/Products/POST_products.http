@@ -1,0 +1,22 @@
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+  "title": "Guantes de Compresión Suave para Artritis, Artrosis, Tendinitis y Túnel Carpiano",
+  "slug": "guantes",
+  "price": 59900,
+  "variants": [
+    {
+      "head": "S",
+      "desc": "6.9 a 7.9cm"
+    },
+    {
+      "head": "M",
+      "desc": "8 a 8.9cm"
+    },
+    {
+      "head": "L",
+      "desc": "9 a 10.1cm"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+### GET all orders
+GET http://localhost:3001/orders
+
+
+### GET one order
+GET http://localhost:3001/orders/627464d5f7c0db368b833562 HTTP/1.1

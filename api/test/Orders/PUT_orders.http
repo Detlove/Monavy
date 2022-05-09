@@ -1,0 +1,6 @@
+PUT http://localhost:3001/orders/6273409f643a3698d10870c0
+Content-Type: application/json
+
+{
+  "buyerName": "Jheferson Eusebio"
+}

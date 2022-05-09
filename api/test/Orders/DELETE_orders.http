@@ -1,0 +1,2 @@
+DELETE http://localhost:3001/orders/6273fb882d87f9465f1c96e7
+Content-Type: application/json
