@@ -1,16 +1,16 @@
-import { m } from 'framer-motion';
+import { m } from 'framer-motion'
 // next
-import NextLink from 'next/link';
+import NextLink from 'next/link'
 // @mui
-import { styled } from '@mui/material/styles';
-import { Button, Typography, Container } from '@mui/material';
+import { styled } from '@mui/material/styles'
+import { Button, Typography, Container } from '@mui/material'
 // layouts
-import Layout from '../layouts';
+import Layout from '../layouts'
 // components
-import Page from '../components/Page';
-import { MotionContainer, varBounce } from '../components/animate';
+import Page from '../components/Page'
+import { MotionContainer, varBounce } from '../components/animate'
 // assets
-import { PageNotFoundIllustration } from '../assets';
+import { PageNotFoundIllustration } from '../assets'
 
 // ----------------------------------------------------------------------
 
@@ -21,24 +21,24 @@ const ContentStyle = styled('div')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
-  padding: theme.spacing(12, 0),
-}));
+  padding: theme.spacing(12, 0)
+}))
 
 // ----------------------------------------------------------------------
 
-Page404.getLayout = function getLayout(page) {
-  return <Layout variant="logoOnly">{page}</Layout>;
-};
+Page404.getLayout = function getLayout (page) {
+  return <Layout variant='logoOnly'>{page}</Layout>
+}
 
 // ----------------------------------------------------------------------
 
-export default function Page404() {
+export default function Page404 () {
   return (
-    <Page title="404 Page Not Found">
+    <Page title='404 Page Not Found'>
       <Container component={MotionContainer}>
         <ContentStyle sx={{ textAlign: 'center', alignItems: 'center' }}>
           <m.div variants={varBounce().in}>
-            <Typography variant="h3" paragraph>
+            <Typography variant='h3' paragraph>
               Sorry, page not found!
             </Typography>
           </m.div>
@@ -54,13 +54,13 @@ export default function Page404() {
             <PageNotFoundIllustration sx={{ height: 260, my: { xs: 5, sm: 10 } }} />
           </m.div>
 
-          <NextLink href="/" passHref>
-            <Button size="large" variant="contained">
+          <NextLink href='/' passHref>
+            <Button size='large' variant='contained'>
               Go to Home
             </Button>
           </NextLink>
         </ContentStyle>
       </Container>
     </Page>
-  );
+  )
 }
